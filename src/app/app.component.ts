@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KeyboardComponent, MdKeyboardRef, MdKeyboardService } from 'ngx-material-keyboard';
+import { MdKeyboardComponent, MdKeyboardRef, MdKeyboardService } from 'ngx-material-keyboard';
 
 @Component({
   selector: 'md-keyboard-demo-root',
@@ -8,7 +8,7 @@ import { KeyboardComponent, MdKeyboardRef, MdKeyboardService } from 'ngx-materia
 })
 export class AppComponent {
 
-  private _keyboardRef: MdKeyboardRef<KeyboardComponent>;
+  private _keyboardRef: MdKeyboardRef<MdKeyboardComponent>;
 
   constructor(private _keyboardService: MdKeyboardService) {}
 
