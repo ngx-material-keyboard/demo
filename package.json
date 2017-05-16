@@ -10,6 +10,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngx-material-keyboard/demo.git"
+  },
+  "author": "David Enke <post@davidenke.de>",
   "dependencies": {
     "@angular/animations": "4.1.2",
     "@angular/common": "4.1.2",
