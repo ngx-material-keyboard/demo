@@ -7,7 +7,39 @@
     </ng-template>
 
     <div class="content">
-      <h1>Keyboard variants</h1>
+      <button
+        md-raised-button
+        (click)="openKeyboard()"
+        aria-label="Show an example keyboard"
+      >
+        Open keyboard
+      </button>
+
+      <button
+        md-raised-button
+        (click)="closeKeyboard()"
+        aria-label="Hide the example keyboard"
+      >
+        Close keyboard
+      </button>
+
+      <md-input-container>
+        <input
+          mdInput
+          mdKeyboard
+          placeholder="Favorite food"
+          value="Sushi"
+        >
+      </md-input-container>
+
+      <md-input-container>
+        <input
+          mdInput
+          [mdKeyboard]="'english'"
+          placeholder="Favorite food"
+          value="Sushi"
+        >
+      </md-input-container>
     </div>
   </md-tab>
 

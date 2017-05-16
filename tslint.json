@@ -105,13 +105,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "md-keyboard-demo",
+      "mdKeyboard",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "md-keyboard-demo",
+      "md-keyboard",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdIconModule, MdTabsModule } from '@angular/material';
+import { MdButtonModule, MdIconModule, MdInputModule, MdTabsModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdKeyboardModule } from 'ngx-material-keyboard';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,10 @@ import { AppComponent } from './app.component';
     HttpModule,
 
     // Material modules
+    MdButtonModule,
     MdIconModule,
+    MdInputModule,
+    MdKeyboardModule,
     MdTabsModule
   ],
   providers: [],
