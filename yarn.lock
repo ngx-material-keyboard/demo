@@ -98,7 +98,7 @@
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.1.2.tgz#fc378c3330c0410e1fb8aac2546329a6887776e4"
 
-"@angular/material2-srcs@git+https://github.com/angular/material2.git#2.0.0-beta.5":
+"@angular/material2-srcs@git+https://github.com/angular/material2.git#2.0.0-beta.5", "material2-srcs@git+https://github.com/angular/material2.git#2.0.0-beta.5":
   version "2.0.0-beta.5"
   resolved "git+https://github.com/angular/material2.git#6121fa18babd70cffc680b9cd2b6ade8edb9ae32"
   dependencies:
@@ -5128,6 +5128,10 @@ wbuf@^1.1.0, wbuf@^1.4.0:
   resolved "https://registry.yarnpkg.com/wbuf/-/wbuf-1.7.2.tgz#d697b99f1f59512df2751be42769c1580b5801fe"
   dependencies:
     minimalistic-assert "^1.0.0"
+
+web-animations-js@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/web-animations-js/-/web-animations-js-2.2.5.tgz#26ca1b34c1347332a0813f8b2bfe69664efa80aa"
 
 webdriver-js-extender@^1.0.0:
   version "1.0.0"
