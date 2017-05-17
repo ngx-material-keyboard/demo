@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private _keyboardService: MdKeyboardService) {}
 
   openDefaultKeyboard() {
-    this._keyboardRef = this._keyboardService.open('test', 'Close');
+    this._keyboardRef = this._keyboardService.open();
   }
 
   closeCurrentKeyboard() {
