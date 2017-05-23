@@ -9,10 +9,18 @@
     <div class="content">
       <button
         md-raised-button
-        (click)="openDefaultKeyboard()"
-        aria-label="Show an example keyboard"
+        (click)="openDefaultKeyboard('en-US')"
+        aria-label="Show an example keyboard (en-US)"
       >
-        Open keyboard
+        Open keyboard (en-US)
+      </button>
+
+      <button
+        md-raised-button
+        (click)="openDefaultKeyboard('de', true)"
+        aria-label="Show an dark example keyboard (de)"
+      >
+        Open dark keyboard (de)
       </button>
 
       <button

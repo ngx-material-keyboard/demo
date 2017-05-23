@@ -12,8 +12,8 @@ export class AppComponent {
 
   constructor(private _keyboardService: MdKeyboardService) {}
 
-  openDefaultKeyboard() {
-    this._keyboardRef = this._keyboardService.open();
+  openDefaultKeyboard(locale = 'en-US', darkTheme) {
+    this._keyboardRef = this._keyboardService.open(locale, { darkTheme: darkTheme });
   }
 
   closeCurrentKeyboard() {
