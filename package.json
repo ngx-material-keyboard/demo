@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "link:core": "cd ./../core && npm ln && cd ./../demo && npm ln ngx-material-keyboard",
+    "unlink:core": "rm -rf ./node_modules/ngx-material-keyboard && npm i"
   },
   "repository": {
     "type": "git",
