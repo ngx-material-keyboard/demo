@@ -7,56 +7,77 @@
     </ng-template>
 
     <div class="content">
-      <button
-        md-raised-button
-        (click)="openDefaultKeyboard('en-US')"
-        aria-label="Show an example keyboard (en-US)"
-      >
-        Open keyboard (en-US)
-      </button>
 
-      <button
-        md-raised-button
-        (click)="openDefaultKeyboard('de', true)"
-        aria-label="Show an dark example keyboard (de)"
-      >
-        Open dark keyboard (de)
-      </button>
+      <section class="row">
+        <div class="col">
+          <md-slide-toggle
+            [checked]="isDebug"
+            [disabled]="!keyboardVisible"
+            (change)="toggleDebug($event)"
+          >Debug special keys</md-slide-toggle>
+        </div>
+      </section>
 
-      <button
-        md-raised-button
-        (click)="closeCurrentKeyboard()"
-        aria-label="Hide the example keyboard"
-      >
-        Close keyboard
-      </button>
+      <section class="row">
+        <div class="col">
+          <button
+            md-raised-button
+            (click)="openDefaultKeyboard('en-US')"
+            aria-label="Show an example keyboard (en-US)"
+          >
+            Open keyboard (en-US)
+          </button>
+        </div>
 
-      <md-input-container>
-        <input
-          mdInput
-          mdKeyboard
-          placeholder="Locale"
-          value="Sushi"
-        >
-      </md-input-container>
+        <div class="col">
+          <button
+            md-raised-button
+            (click)="openDefaultKeyboard('de', true)"
+            aria-label="Show an dark example keyboard (de)"
+          >
+            Open dark keyboard (de)
+          </button>
+        </div>
 
-      <md-input-container>
-        <input
-          mdInput
-          [mdKeyboard]="'de-CH'"
-          placeholder="de-CH"
-          value="Sushi"
-        >
-      </md-input-container>
+        <div class="col">
+          <button
+            md-raised-button
+            (click)="closeCurrentKeyboard()"
+            aria-label="Hide the example keyboard"
+          >
+            Close keyboard
+          </button>
+        </div>
+      </section>
 
-      <md-input-container>
-        <input
-          mdInput
-          [mdKeyboard]="'Azərbaycanca'"
-          placeholder="Azərbaycanca"
-          value="Sushi"
-        >
-      </md-input-container>
+      <section class="row">
+        <md-input-container class="col">
+          <input
+            mdInput
+            mdKeyboard
+            placeholder="Locale"
+            value="Sushi"
+          >
+        </md-input-container>
+
+        <md-input-container class="col">
+          <input
+            mdInput
+            [mdKeyboard]="'de-CH'"
+            placeholder="de-CH"
+            value="Sushi"
+          >
+        </md-input-container>
+
+        <md-input-container class="col">
+          <input
+            mdInput
+            [mdKeyboard]="'Azərbaycanca'"
+            placeholder="Azərbaycanca"
+            value="Sushi"
+          >
+        </md-input-container>
+      </section>
     </div>
   </md-tab>
 
