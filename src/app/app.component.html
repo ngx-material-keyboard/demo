@@ -14,15 +14,28 @@
             [checked]="isDebug"
             [disabled]="!keyboardVisible"
             (change)="toggleDebug($event)"
-          >Debug special keys
+          >
+            Debug special keys
           </md-slide-toggle>
         </div>
+
         <div class="col">
           <md-slide-toggle
             [checked]="darkTheme"
             [disabled]="!keyboardVisible"
             (change)="toggleDarkTheme($event)"
-          >Dark theme
+          >
+            Dark theme
+          </md-slide-toggle>
+        </div>
+
+        <div class="col">
+          <md-slide-toggle
+            [checked]="hasAction"
+            [disabled]="!keyboardVisible"
+            (change)="toggleAction ($event)"
+          >
+            Closable
           </md-slide-toggle>
         </div>
       </section>
@@ -31,20 +44,33 @@
         <div class="col">
           <button
             md-raised-button
-            (click)="openKeyboard('en-US')"
-            aria-label="Show an example keyboard (en-US)"
+            (click)="openKeyboard(defaultLocale)"
+            aria-label="Open default keyboard"
           >
-            Open keyboard (en-US)
+            Open default keyboard ({{defaultLocale}})
           </button>
         </div>
 
         <div class="col">
+          <md-select
+            [placeholder]="'select layout'"
+            [(ngModel)]="locale"
+          >
+            <md-option
+              *ngFor="let layout of layouts"
+              [value]="layout.layout.lang && layout.layout.lang[0] || layout.name"
+            >
+              {{layout.layout.name}}
+              <ng-container *ngIf="layout.layout.name !== layout.name">({{layout.name}})</ng-container>
+            </md-option>
+          </md-select>
+
           <button
             md-raised-button
-            (click)="openKeyboard('de')"
-            aria-label="Show ans example keyboard (de)"
+            (click)="openKeyboard(locale)"
+            aria-label="Open selected keyboard"
           >
-            Open keyboard (de)
+            Open selected keyboard ({{locale}})
           </button>
         </div>
 
@@ -58,6 +84,17 @@
           </button>
         </div>
       </section>
+
+    </div>
+  </md-tab>
+
+  <md-tab>
+    <ng-template md-tab-label>
+      <md-icon>assignment</md-icon>
+      Test form
+    </ng-template>
+
+    <div class="content">
 
       <section class="row">
         <md-input-container class="col">
@@ -87,17 +124,7 @@
           >
         </md-input-container>
       </section>
-    </div>
-  </md-tab>
 
-  <md-tab>
-    <ng-template md-tab-label>
-      <md-icon>assignment</md-icon>
-      Test form
-    </ng-template>
-
-    <div class="content">
-      <h1>Test form</h1>
     </div>
   </md-tab>
 
