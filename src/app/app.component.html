@@ -14,7 +14,16 @@
             [checked]="isDebug"
             [disabled]="!keyboardVisible"
             (change)="toggleDebug($event)"
-          >Debug special keys</md-slide-toggle>
+          >Debug special keys
+          </md-slide-toggle>
+        </div>
+        <div class="col">
+          <md-slide-toggle
+            [checked]="darkTheme"
+            [disabled]="!keyboardVisible"
+            (change)="toggleDarkTheme($event)"
+          >Dark theme
+          </md-slide-toggle>
         </div>
       </section>
 
@@ -22,7 +31,7 @@
         <div class="col">
           <button
             md-raised-button
-            (click)="openDefaultKeyboard('en-US')"
+            (click)="openKeyboard('en-US')"
             aria-label="Show an example keyboard (en-US)"
           >
             Open keyboard (en-US)
@@ -32,10 +41,10 @@
         <div class="col">
           <button
             md-raised-button
-            (click)="openDefaultKeyboard('de', true)"
-            aria-label="Show an dark example keyboard (de)"
+            (click)="openKeyboard('de')"
+            aria-label="Show ans example keyboard (de)"
           >
-            Open dark keyboard (de)
+            Open keyboard (de)
           </button>
         </div>
 

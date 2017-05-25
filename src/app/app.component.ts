@@ -11,6 +11,12 @@ export class AppComponent {
 
   private _keyboardRef: MdKeyboardRef<MdKeyboardComponent>;
 
+  darkTheme: boolean;
+
+  duration: number;
+
+  hasAction: boolean;
+
   isDebug: boolean;
 
   get keyboardVisible(): boolean {
@@ -19,9 +25,13 @@ export class AppComponent {
 
   constructor(private _keyboardService: MdKeyboardService) {}
 
-  openDefaultKeyboard(locale = 'en-US', darkTheme) {
-    this._keyboardRef = this._keyboardService.open(locale, { darkTheme: darkTheme });
-    this._keyboardRef.instance.isDebug = this.isDebug;
+  openKeyboard(locale = 'en-US') {
+    this._keyboardRef = this._keyboardService.open(locale, {
+      darkTheme: this.darkTheme,
+      duration: this.duration,
+      hasAction: this.hasAction,
+      isDebug: this.isDebug
+    });
   }
 
   closeCurrentKeyboard() {
@@ -32,7 +42,12 @@ export class AppComponent {
 
   toggleDebug(toggle: MdSlideToggleChange) {
     this.isDebug = toggle.checked;
-    this._keyboardRef.instance.isDebug = toggle.checked;
+    this._keyboardRef.isDebug = toggle.checked;
+  }
+
+  toggleDarkTheme(toggle: MdSlideToggleChange) {
+    this.darkTheme = toggle.checked;
+    this._keyboardRef.darkTheme = toggle.checked;
   }
 
 }
