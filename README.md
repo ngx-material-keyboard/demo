@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.org/ngx-material-keyboard/demo.svg?branch=master)](https://travis-ci.org/ngx-material-keyboard/demo)
+
 # Demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+You'll find the demo [here](https://ngx-material-keyboard.github.io/demo/).
 
 ## Development server
 
