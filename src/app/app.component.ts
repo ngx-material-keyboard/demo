@@ -1,6 +1,6 @@
 import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { MdSlideToggleChange } from '@angular/material';
-import { IKeyboardLayout, MD_KEYBOARD_LAYOUTS, MdKeyboardComponent, MdKeyboardRef, MdKeyboardService } from 'ngx-material-keyboard';
+import { IKeyboardLayout, MD_KEYBOARD_LAYOUTS, MdKeyboardComponent, MdKeyboardRef, MdKeyboardService } from '@ngx-material-keyboard/core';
 
 @Component({
   selector: 'md-keyboard-demo-root',
@@ -37,9 +37,7 @@ export class AppComponent implements OnInit {
               @Inject(MD_KEYBOARD_LAYOUTS) private _layouts) {}
 
   ngOnInit() {
-    this.defaultLocale = (
-    ' ' + this.locale
-    ).slice(1);
+    this.defaultLocale = ` ${this.locale}`.slice(1);
     this.layouts = Object.keys(this._layouts)
                          .map((name: string) => (
                            {

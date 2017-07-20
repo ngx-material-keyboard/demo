@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { MdButtonModule, MdIconModule, MdInputModule, MdSelectModule, MdSlideToggleModule, MdTabsModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdKeyboardModule } from 'ngx-material-keyboard';
+import { MdKeyboardModule } from '@ngx-material-keyboard/core';
 
 import { AppComponent } from './app.component';
 
