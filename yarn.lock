@@ -165,9 +165,9 @@
     magic-string "^0.19.0"
     source-map "^0.5.6"
 
-"@ngx-material-keyboard/core@git+https://github.com/ngx-material-keyboard/core.git#feature/packaging-and-update":
-  version "0.0.1-SNAPSHOT"
-  resolved "git+https://github.com/ngx-material-keyboard/core.git#3c8a5cb44d6664df53c69026ec7a8b53b6fcebcf"
+"@ngx-material-keyboard/core@git+https://github.com/ngx-material-keyboard/core.git#0.0.1":
+  version "0.0.1"
+  resolved "git+https://github.com/ngx-material-keyboard/core.git#b58e328d7b3f242c0849a4d5aa43d05cdc72569c"
 
 "@types/jasmine@*", "@types/jasmine@~2.5.53":
   version "2.5.53"
