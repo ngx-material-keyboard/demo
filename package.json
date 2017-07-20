@@ -29,7 +29,7 @@
     "@angular/platform-browser": "4.3.0",
     "@angular/platform-browser-dynamic": "4.3.0",
     "@angular/router": "4.3.0",
-    "@ngx-material-keyboard/core": "git+https://github.com/ngx-material-keyboard/core.git#feature/packaging-and-update",
+    "@ngx-material-keyboard/core": "git+https://github.com/ngx-material-keyboard/core.git#0.0.1",
     "core-js": "2.4.1",
     "reset.scss": "1.0.0",
     "rxjs": "5.4.2",
