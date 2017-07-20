@@ -1,6 +1,6 @@
 import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { MdSlideToggleChange } from '@angular/material';
-import { IKeyboardLayout, MD_KEYBOARD_LAYOUTS, MdKeyboardComponent, MdKeyboardRef, MdKeyboardService } from 'ngx-material-keyboard';
+import { IKeyboardLayout, MD_KEYBOARD_LAYOUTS, MdKeyboardComponent, MdKeyboardRef, MdKeyboardService } from '@ngx-material-keyboard/core';
 
 @Component({
   selector: 'md-keyboard-demo-root',

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-material-keyboard-demo",
+  "name": "@ngx-material-keyboard/demo",
   "version": "0.0.1-SNAPSHOT",
   "license": "MIT",
   "scripts": {
@@ -29,9 +29,8 @@
     "@angular/platform-browser": "4.3.0",
     "@angular/platform-browser-dynamic": "4.3.0",
     "@angular/router": "4.3.0",
+    "@ngx-material-keyboard/core": "git+https://github.com/ngx-material-keyboard/core.git#feature/packaging-and-update",
     "core-js": "2.4.1",
-    "material2-srcs": "angular/material2#2.0.0-beta.8",
-    "ngx-material-keyboard": "git+https://github.com/ngx-material-keyboard/core.git#develop",
     "reset.scss": "1.0.0",
     "rxjs": "5.4.2",
     "web-animations-js": "2.2.5",
