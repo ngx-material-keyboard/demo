@@ -38,14 +38,13 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.defaultLocale = ` ${this.locale}`.slice(1);
-    this.layouts = Object.keys(this._layouts)
-                         .map((name: string) => (
-                           {
-                             name: name,
-                             layout: this._layouts[name]
-                           }
-                         ))
-                         .sort((a, b) => a.layout.name.localeCompare(b.layout.name));
+    this.layouts = Object
+      .keys(this._layouts)
+      .map((name: string) => ({
+        name: name,
+        layout: this._layouts[name]
+      }))
+      .sort((a, b) => a.layout.name.localeCompare(b.layout.name));
   }
 
   openKeyboard(locale = this.defaultLocale) {

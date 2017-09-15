@@ -6,7 +6,7 @@
       Keyboard variants
     </ng-template>
 
-    <div class="content">
+    <form class="content">
 
       <section class="row">
         <div class="col">
@@ -53,6 +53,7 @@
 
         <div class="col">
           <md-select
+            name="layout"
             [placeholder]="'select layout'"
             [(ngModel)]="locale"
           >
@@ -85,7 +86,7 @@
         </div>
       </section>
 
-    </div>
+    </form>
   </md-tab>
 
   <md-tab>
@@ -94,7 +95,7 @@
       Test form
     </ng-template>
 
-    <div class="content">
+    <form class="content">
 
       <section class="row">
         <md-input-container class="col">
@@ -125,7 +126,7 @@
         </md-input-container>
       </section>
 
-    </div>
+    </form>
   </md-tab>
 
 </md-tab-group>
