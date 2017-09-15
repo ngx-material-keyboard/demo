@@ -1,6 +1,6 @@
 {
   "name": "@ngx-material-keyboard/demo",
-  "version": "0.0.2-SNAPSHOT",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
